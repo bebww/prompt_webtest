@@ -148,39 +148,6 @@ section {
     font-size: 20px;
 }
 
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-
-.btn2 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    background: #F95C00;
-    font-size: 20px;
-    padding: 1rem;
-    border-radius: 8px;
-    transition: all .45s ease;
-}
-
-.btn2 i {
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.btn2:hover {
-    transform: scale(1.1);
-}
 /* section */
 
 /* about */
@@ -218,7 +185,15 @@ section {
     margin-bottom: 2rem;
 }
 
-.about-text a {
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.btn2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +207,15 @@ section {
     transition: all .45s ease;
 }
 
-.about-text a:hover {
+.btn2 i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.btn2:hover {
     transform: scale(1.1);
 }
 
