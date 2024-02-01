@@ -354,6 +354,11 @@ section {
     color: white;
     align-items: center;
 }
+.box p {
+    font-size: 15px;
+    color: white;
+    align-items: center;
+}
 
 .box a {
     background-color: white;
