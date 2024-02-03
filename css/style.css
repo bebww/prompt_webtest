@@ -144,8 +144,33 @@ section {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 20px;
+}
+
+.button a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    margin-top: 20px;
+    background-color: #192A60;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    transition: all .45s ease;
+}
+
+.button a:hover {
+    transform: scale(1.1);
+}
+
+.button span {
+    font-size: 15px;
+    margin-left: 15px;
+    color: #192A60;
+    font-weight: 500;
+
 }
 
 /* section */
@@ -184,14 +209,6 @@ section {
     line-height: 1.8;
     margin-bottom: 2rem;
 }
-
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
 
 .btn2 {
     display: inline-flex;
@@ -286,7 +303,7 @@ section {
 
 .layer p {
     color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1.8;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 
