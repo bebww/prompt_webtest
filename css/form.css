@@ -69,8 +69,8 @@
     border: 1px solid #192A60;
   }
   
-  .text button {
-    align-self: flex-end;
+  .text input {
+    align-items: center;
     padding: 8px;
     padding-left: 10px;
     padding-right: 10px;
@@ -86,3 +86,18 @@
     margin-bottom: 5px;
   }
       
+#submit{
+	border: none;
+	background-color: #F95C00;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 8px;
+}
+
+#submit:hover{
+	background-color: #192A60;
+}
+
+
+/* asda */
