@@ -69,6 +69,8 @@ header {
 }
 
 .text {
+    max-width: 530px;
+    height: auto;
     margin-top: 30px;
     justify-content: center;
 }
@@ -84,5 +86,22 @@ header {
     margin-top: 10px;
     margin-bottom: 20px;
     justify-content: center;
-    display: grid;
+
+    font-size: 1rem;
+}
+
+.detail {
+    font-size: 13px;
+}
+
+@media (max-width: 680px) {
+    .text p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .text p {
+        font-size: .8rem;
+    }
 }
