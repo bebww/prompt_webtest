@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkw_student67</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<div class="bg-gradient-to-t h-[100px] ">
+    <header class="bg-white ">
+        <nav class="flex items-center justify-between w-full mx-auto">
+            <div class="flex items-center">
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+            </div>
+            <div
+                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                    <li>
+                        <a class="hover:text-gray-500" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="map.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-gray-500" href="more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+</script>
+
+<!-- header -->
+<div  class="justify-center grid">
+    <div class="grid pb-16">
+        <img src="pic/kku_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/kku.png" alt="kku"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+    <div class="grid pb-16">
+        <img src="pic/cu_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/cu.png" alt="cu"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+    <div class="grid pb-16">
+        <img src="pic/tu_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/tu.png" alt="cu"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+    <div class="grid pb-16">
+        <img src="pic/ku_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/ku.png" alt="cu"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+    <div class="grid pb-16">
+        <img src="pic/cmu_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/cmu.png" alt="cu"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+    <div class="grid">
+        <img src="pic/mu_logo.png" class=" w-[70vh] justify-center px-16">
+        <div class="flex justify-center">
+            <img src="pic/mu.png" alt="cu"
+            class="w-[70vh]">
+        </div>
+    </div>
+
+</div>
+
+<div>
+    <a class="flex justify-center text-indigo-600"
+    href="https://drive.google.com/file/d/17udflRWfjmxHv_o4TLnZJuap3qXs1MS4/view?usp=sharing">
+        < เพิ่มเติม > </a>
+</div>
+
+
+
+<!-- end -->
+<div class="box">
+    <div class="mt-[10vh] pl-[40px] p-[20px]">
+        <h2 class="md:text-xl text-base font-semibold bg-white">Contact Us</h2>
+        <h2 class="md:text-xl text-base bg-white">Student Committee 2567</h2>
+
+    <div class="pt-[20px] flex items-center">
+        <box-icon name='facebook-circle' type='logo' size='md' ></box-icon>
+        <a href="https://www.facebook.com/kkw.studentcouncil.official"
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">คณะกรรมการนักเรียนโรงเรียน <br> ขอนแก่นวิทยายน </a> 
+    </div>
+    <div class=" flex items-center mt-[10px]">
+        <box-icon type='logo' name='instagram' size='md'></box-icon>
+        <a href="https://www.instagram.com/kkw.student?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">kkw.student</a> 
+    </div>
+        
+    </div>
+</div>  
+    <script src="script.js"></script> 
+</body>
+</html>

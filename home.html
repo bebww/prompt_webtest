@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkw_student67</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header -->
+    <!-- <div class="flex list-none justify-between bg-gray-500 font-medium ">
+        <div class="flex ml-[20px] items-center">
+            <img src="pic/logo01.png" alt="" class="w-[65px] p-[5px]">
+            <p class="ml-[5px] text-white">Student <br> Comitee 67</p>
+        </div>
+        <div class="flex items-center pr-[20px]">
+            <box-icon name='menu' color='#ffffff' ></box-icon>
+        </div>
+    </div> -->
+
+<!-- header -->
+
+
+<div class="bg-gradient-to-t h-[100px] ">
+    <header class="bg-white ">
+        <nav class="flex items-center justify-between w-full mx-auto">
+            <div class="flex items-center">
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+            </div>
+            <div
+                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="map.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-gray-500" href="more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+  
+
+<!-- slide -->
+<div class="box">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="pic/welcome_kkw.png" alt="">
+            </div>
+            <div class="item">
+                <img src="pic/header_kkw.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="pic/pic.png" alt="">
+            </div>
+            <div class="item">
+                <img src="pic/pic.png" alt="">
+            </div>
+            <div class="item">
+                <img src="pic/pic.png" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!-- slide -->
+
+<!-- countdown -->
+
+<div class="max-w-screen-xl mx-auto px-5 mt-20 sm:px-10 md:px-16">
+
+
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">Coming Soon</a>
+        </div>
+    </div>
+
+
+<div class="grid cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-5 mt-20 sm:px-10 md:px-16">
+
+    <!-- 1 -->
+    <div class="flex felx-col max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="pt-4 px-6">
+            <h2 class="text-xl font-bold text-gray-800">NETSAT 2/2567</h2>
+            <p class="mt-[5px]">03/08/2567</p>
+        </div>
+    <div>
+        <div class="py-4 px-6">
+            <div class="flex flex-wrap gap-3 justify-center items-center">
+                <div class="border rounded-lg px-4 py-2">
+                    <div id="days" class="font-bold text-2xl text-gray-800"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- 2 -->
+    <div class="flex felx-col max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="pt-4 px-6">
+            <h2 class="text-xl font-bold text-gray-800">Midterm Exam</h2>
+            <p class="mt-[5px]">23/07/2024</p>
+        </div>
+    <div>
+        <div class="py-4 px-6">
+            <div class="flex flex-wrap gap-3 justify-center items-center">
+                <div class="border rounded-lg px-4 py-2">
+                    <div id="days2" class="font-bold text-2xl text-gray-800"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- 3 -->
+    <div class="flex felx-col max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="pt-4 px-6">
+            <h2 class="text-xl font-bold text-gray-800">Coming Soon</h2>
+            <p class="mt-[5px]">10/10/2024</p>
+        </div>
+    <div>
+        <div class="py-4 px-6">
+            <div class="flex flex-wrap gap-3 justify-center items-center">
+                <div class="border rounded-lg px-4 py-2">
+                    <div id="days3" class="font-bold text-2xl text-gray-800"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+
+</div>
+<!-- countdown -->
+
+<!-- content -->
+<div class="max-w-screen-xl mx-auto px-5 mt-20 sm:px-10 md:px-16">
+
+    <div class="border-b mt-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">KKW News</a>
+        </div>
+        <a href="#">See All</a>
+    </div>
+</div>
+
+<div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+
+        <div class="sm:col-span-5">
+            <a href="#">
+                <div class="bg-cover text-center overflow-hidden"
+                    style="min-height: 300px; background-image: url('pic/kkw_sport.png')"
+                    title="Woman holding a mug">
+                </div>
+            </a>
+            <div
+                class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                <div class="">
+                    <div class="flex items-center bg-gray-200">
+                        <img src="pic/logo01.png" alt="" class="w-[65px] p-[10px]">
+                        <p class="ml-[10px]">Student Committee</p>
+                    </div>
+                    <a href="#"
+                        class="block text-gray-900 font-bold text-2xl mb-[10px] mt-[10px] hover:text-indigo-600 transition duration-500 ease-in-out">ประกาศคณะสี</a>
+                    <p class="text-gray-700 text-base mt-2">ประกาศคณะสี ระดับชั้นม.1 ม.4 และม.6 <br> ประจำปีการศึกษา 2567</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sm:col-span-7 grid grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/kkw_card.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    ตารางถ่ายบัตรนักเรียน</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/rights.png')"   >
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    การเตรียมตัวรับสิทธิ์</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/backtoschool.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    Back To School</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">How
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Survey:
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Trump
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- content -->
+
+<!-- <div class="grid xl:flex justify-center">
+    <div class="max-w-[500px] m-[50px] md:m-[100px] justify-center">
+        <div class="flex items-center bg-gray-200">
+            <img src="pic/pic_1.png" alt="" class="w-[65px]">
+            <p class="ml-[20px]">main</p>
+        </div>
+        <a href="#">
+            <img class="rounded-t-lg" src="pic/pic_1.png" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, vel.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class=" m-[50px] md:m-[100px] justify-center">
+    <div class="flex items-center bg-gray-200">
+        <img src="pic/pic_1.png" alt="" class="w-[65px]">
+        <p class="ml-[20px]">main</p>
+    </div>
+    <div class="relative m-[50px] md:m-[100px] :pl-[150px] pl-0 ">
+        <div class="flex justify-end">
+            <a href="#" class="absolute mr-[10px] mt-[10px] bg-red-500 flex items-center rounded-full">
+                <box-icon name='chevron-right' color="#ffffff" ></box-icon></a>
+        </div>
+        
+        <div
+          class="block rounded-lg text-white shadow-secondary-1 dark:bg-surface-dark">
+          <img
+            class="rounded-lg w-[720px]"
+            src="https://tecdn.b-cdn.net/img/new/slides/017.webp"
+            alt="" />
+          <div class="absolute top-0 p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight ">
+              Card title
+            </h5>
+            <p class="mb-4 text-base invisible md:visible">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis accusamus rem? Repellendus illum iusto hic accusamus natus recusandae magnam sapiente voluptatum vitae nesciunt veniam maxime, praesentium ducimus? Incidunt, consequuntur?
+            </p>
+                <a href="#" class="absolute inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div> -->
+
+<div class="max-w-screen-xl mx-auto px-5 mt-20 sm:px-10 md:px-16">
+
+    <div class="border-b mt-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">Operations</a>
+        </div>
+        <a href="#">See All</a>
+    </div>
+</div>
+
+<div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+
+        <div class="sm:col-span-5">
+            <a href="#">
+                <div class="bg-cover text-center overflow-hidden"
+                    style="min-height: 300px; background-image: url('pic/1m1r_1.png')"
+                    title="Woman holding a mug">
+                </div>
+            </a>
+            <div
+                class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                <div class="">
+                    <div class="flex items-center bg-gray-200">
+                        <img src="pic/logo01.png" alt="" class="w-[65px] p-[10px]">
+                        <p class="ml-[10px]">Student Committee</p>
+                    </div>
+                    <a href="#"
+                        class="block text-gray-900 font-bold text-2xl mb-[10px] mt-[10px] hover:text-indigo-600 transition duration-500 ease-in-out">กิจกรรมปฐมนิเทศ</a>
+                    <p class="text-gray-700 text-base mt-2">กิจกรรมปฐมนิเทศ <br>นักเรียนชั้นมัธยมศึกษาปีที่ 1 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sm:col-span-7 grid grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    asdadsadadadasd</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic.png')"   >
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    adadadasd</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                    asasdadada</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">How
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Survey:
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="">
+                <a href="#">
+                    <div class="h-40 bg-cover text-center overflow-hidden"
+                        style="background-image: url('pic/pic_1.png')">
+                    </div>
+                </a>
+                <a href="#"
+                    class="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Trump
+                    Lorem ipsum dolor sit amet.</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- end -->
+<div class="box">
+    <div class="mt-[10vh] pl-[40px] p-[20px]">
+        <h2 class="md:text-xl text-base font-semibold bg-white">Contact Us</h2>
+        <h2 class="md:text-xl text-base bg-white">Student Committee 2567</h2>
+
+    <div class="pt-[20px] flex items-center">
+        <box-icon name='facebook-circle' type='logo' size='md' ></box-icon>
+        <a href="https://www.facebook.com/kkw.studentcouncil.official"
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">คณะกรรมการนักเรียนโรงเรียน <br> ขอนแก่นวิทยายน </a> 
+    </div>
+    <div class=" flex items-center mt-[10px]">
+        <box-icon type='logo' name='instagram' size='md'></box-icon>
+        <a href="https://www.instagram.com/kkw.student?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">kkw.student</a> 
+    </div>
+        
+    </div>
+</div>    
+
+<script src="script.js"></script> 
+</body>
+</html>

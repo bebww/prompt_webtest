@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkw_student67</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<div class="bg-gradient-to-t h-[100px] ">
+    <header class="bg-white ">
+        <nav class="flex items-center justify-between w-full mx-auto">
+            <div class="flex items-center">
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+            </div>
+            <div
+                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                    <li>
+                        <a class="hover:text-gray-500" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="map.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-gray-500" href="more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+</script>
+
+<!-- header -->
+
+<div class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">ม.ต้น</a>
+        </div>
+    </div>
+    <div class="flex justify-center mt-10 gap-[4vw] md:gap-[5vw]">
+        <a href="https://drive.google.com/file/d/1TBmQnd8MvTjYCBUgzQovtFqsHNahW1py/view" class="comic-button1">ม.1</a>
+        <a href="https://drive.google.com/file/d/1yBqsJbfQaLS9VuP2WWBtK6NEN0MdzseP/view" class="comic-button2">ม.2</a>
+        <a href="https://drive.google.com/file/d/1O6q1warz0wNkNGHs0HXTcx07qS92qclc/view" class="comic-button3">ม.3</a>
+    </div>
+</div> 
+
+<div class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">ม.ปลาย</a>
+        </div>
+    </div>
+    <div class="flex justify-center mt-10 gap-[4vw] md:gap-[5vw]">
+        <a href="https://drive.google.com/file/d/1CUlut6zeGQfvyYBF-eXwU67NtVR3IQsZ/view" class="comic-button1">ม.4</a>
+        <a href="https://drive.google.com/file/d/1GBlbvLvL5qemxOWbnj4L8EbpkVcgVXvf/view" class="comic-button2">ม.5</a>
+        <a href="https://drive.google.com/file/d/1rDgt6lLNgklaPsr31lG7OyTI29BQ3noG/view" class="comic-button3">ม.6</a>
+    </div>
+</div> 
+
+<style>
+.comic-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF57A8;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button1:hover {
+  background-color: #fff;
+  color:#FF57A8;
+  border: 2px solid #FF57A8;
+  box-shadow: 5px 5px 0px #FF57A8;
+}
+
+.comic-button1:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/* // */
+.comic-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #70DAFF;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button2:hover {
+  background-color: #fff;
+  color:#70DAFF;
+  border: 2px solid #70DAFF;
+  box-shadow: 5px 5px 0px #70DAFF;
+}
+
+.comic-button2:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/* // */
+.comic-button3 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color:  #FFDB49;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button3:hover {
+  background-color: #fff;
+  color:#FFDB49;
+  border: 2px solid  #FFDB49;
+  box-shadow: 5px 5px 0px  #FFDB49;
+}
+
+.comic-button3:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+</style>
+
+<div  class="max-w-screen-xl mx-auto px-5 mt-10 sm:px-10 md:px-16">
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+            <a href="#" class="font-semibold inline-block">บุคลากร</a>
+        </div>
+    </div>
+    <img src="pic/sci.png" alt="" class="w-auto h-auto">
+    <img src="pic/math.png" alt="" class="w-auto h-auto">
+    <img src="pic/thai.png" alt="" class="w-auto h-auto">
+    <img src="pic/art.png" alt="" class="w-auto h-auto">
+    <img src="pic/pe.png" alt="" class="w-auto h-auto">
+</div>
+<!-- end -->
+<div class="box">
+    <div class="mt-[10vh] pl-[40px] p-[20px]">
+        <h2 class="md:text-xl text-base font-semibold bg-white">Contact Us</h2>
+        <h2 class="md:text-xl text-base bg-white">Student Committee 2567</h2>
+
+    <div class="pt-[20px] flex items-center">
+        <box-icon name='facebook-circle' type='logo' size='md' ></box-icon>
+        <a href="https://www.facebook.com/kkw.studentcouncil.official"
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">คณะกรรมการนักเรียนโรงเรียน <br> ขอนแก่นวิทยายน </a> 
+    </div>
+    <div class=" flex items-center mt-[10px]">
+        <box-icon type='logo' name='instagram' size='md'></box-icon>
+        <a href="https://www.instagram.com/kkw.student?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">kkw.student</a> 
+    </div>
+        
+    </div>
+</div>  
+
+    <script src="script.js"></script> 
+</body>
+</html>

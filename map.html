@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header -->
+
+<div class="bg-gradient-to-t h-[100px] ">
+    <header class="bg-white ">
+        <nav class="flex items-center justify-between w-full mx-auto">
+            <div class="flex items-center">
+                <img class="w-[65px] cursor-pointer" src="pic/logo01.png" alt="...">
+                <p class="sm:text-[15px] ml-[20px] text-[12px]">Student Committee</p>
+            </div>
+            <div
+                class=" lg:mr-[-50%] mr-[-30%] nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[40vh] left-0 top-[-400%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 justify-between">
+                    <li>
+                        <a class="hover:text-gray-500" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="map.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="classSchedule.html">Class Schedule</a>
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-gray-500" href="more.html">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+</div>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+</script>
+
+<!-- header -->
+
+<div class="p-[40px] flex justify-center items-center">
+    <img src="pic/map.png" alt="" class="h-auto max-w-full max-h-[900px]">
+</div>
+
+<!-- content -->
+<div class=" grid cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-5 mt-20 sm:px-10 md:px-16">
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 1</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 2</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 3</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 4</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 5</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 6</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 7</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 8</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 9</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 10</p>
+      </div>
+    </div>
+</div>
+
+<div class="relative group w-50 h-50 overflow-hidden bg-black m-auto">
+    <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100 group-hover:scale-110" src="pic/pic.png" />
+    <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full"></div>
+    <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-1/4">
+      <div class="absolute w-full flex place-content-center">
+        <p class="font-bold text-3xl text-center shadow-2xl text-white mt-10">อาคาร 11</p>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- end -->
+
+<div class="relative w-full h-[300px] mt-[10vh] pl-[40px] p-[20px]">
+    <iframe class="absolute top-0 left-0 w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15307.384363848087!2d102.82541426241218!3d16.432641230110185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a3b34a21717%3A0x2fbaa1ac4f6cb474!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LiC4Lit4LiZ4LmB4LiB4LmI4LiZ4Lin4Li04LiX4Lii4Liy4Lii4LiZ!5e0!3m2!1sth!2sth!4v1716053202733!5m2!1sth!2sth"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+</div>
+
+<div class="box">
+    <div class="mt-[10vh] pl-[40px] p-[20px]">
+        <h2 class="md:text-xl text-base font-semibold bg-white">Contact Us</h2>
+        <h2 class="md:text-xl text-base bg-white">Student Committee 2567</h2>
+
+    <div class="pt-[20px] flex items-center">
+        <box-icon name='facebook-circle' type='logo' size='md' ></box-icon>
+        <a href="https://www.facebook.com/kkw.studentcouncil.official"
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">คณะกรรมการนักเรียนโรงเรียน <br> ขอนแก่นวิทยายน </a> 
+    </div>
+    <div class=" flex items-center mt-[10px]">
+        <box-icon type='logo' name='instagram' size='md'></box-icon>
+        <a href="https://www.instagram.com/kkw.student?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        class="pl-[10px] font-semibold md:text-xl text-base bg-white pr-[30px]">kkw.student</a> 
+    </div>
+
+
+</div>
+
+</body>
+</html>
