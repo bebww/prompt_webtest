@@ -144,33 +144,8 @@ section {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     font-size: 20px;
-}
-
-.button a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3px;
-    margin-top: 20px;
-    background-color: #192A60;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-    transition: all .45s ease;
-}
-
-.button a:hover {
-    transform: scale(1.1);
-}
-
-.button span {
-    font-size: 15px;
-    margin-left: 15px;
-    color: #192A60;
-    font-weight: 500;
-
 }
 
 /* section */
@@ -209,6 +184,14 @@ section {
     line-height: 1.8;
     margin-bottom: 2rem;
 }
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 
 .btn2 {
     display: inline-flex;
@@ -396,69 +379,6 @@ section {
     margin-bottom: 3rem;
     margin-top: 1rem;
 }
-
-/* loader */
-
-.dots-container {
-    margin-top: -100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .dot {
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: #192A60;
-    animation: pulse 1.5s infinite ease-in-out;
-  }
-  
-  .dot:last-child {
-    margin-right: 0;
-  }
-  
-  .dot:nth-child(1) {
-    animation-delay: -0.3s;
-  }
-  
-  .dot:nth-child(2) {
-    animation-delay: -0.1s;
-  }
-  
-  .dot:nth-child(3) {
-    animation-delay: 0.1s;
-  }
-
-.soon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F95C00;
-}
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(0.8);
-      background-color: #F95C00;
-      box-shadow: 0 0 0 0 rgba(255, 155, 88, 0.7);
-    }
-  
-    50% {
-      transform: scale(1.2);
-      background-color: #F95C00;
-      box-shadow: 0 0 0 10px rgba(252, 235, 178, 0);
-    }
-  
-    100% {
-      transform: scale(0.8);
-      background-color: #F95C00;
-      box-shadow: 0 0 0 0 rgba(255, 155, 88, 0.7);
-    }
-  }
 
 /* member */
 
